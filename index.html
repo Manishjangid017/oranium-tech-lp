@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oranium Tech | Gen AI Course</title>
+
+    <!-- Google Fonts: Poppins + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.3 + Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="inter-fonts">
+    <!-- ===== Sticky top (strip + header) ===== -->
+    <div class="site-top">
+      <!-- Top marquee strip -->
+      <div class="top-strip">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+          </div>
+          <!-- duplicate group (seamless loop) -->
+          <div class="marquee-group" aria-hidden="true">
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+            <span class="strip-item"><strong>20% OFF:</strong> Enroll in the Next 24 Hours</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="site-header">
+        <div class="custom-container">
+          <div class="d-flex align-items-center justify-content-between gap-3">
+            <a href="#" class="d-inline-flex">
+              <img src="images/logo-img.webp" alt="Oranium Tech" class="logo-img" />
+            </a>
+
+            <div class="header-actions d-flex align-items-center gap-2">
+              <a href="#" class="btn-help poppins-fonts">Help <i class="bi bi-question-circle"></i></a>
+              <a href="#" class="btn-book poppins-fonts">Book Call <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero-section">
+      <div class="custom-container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- Left content -->
+          <div class="col-12 col-lg-7 col-xl-7">
+            <div class="hero-content">
+              <h1 class="hero-title poppins-fonts">
+                Get Paid
+                <span class="underline-text"><span class="brand-text">28%*</span> More</span>
+                <br />in ONLY <span class="italic-text">3 Months</span> <br />By Learning
+                <span class="brand-text">Gen AI</span>
+              </h1>
+
+              <p class="hero-desc inter-fonts">
+                Learn AI workflows that save you hours of manual work in <strong>a week</strong> and help you become
+                more productive—directly linked with <strong>higher salaries</strong>.
+              </p>
+
+              <!-- Stats (icons: apni images add kr lena) -->
+              <ul class="hero-stats list-unstyled poppins-fonts">
+                <li>
+                  <img src="images/star-icon.svg" alt="Rating" class="stat-icon" />
+                  <span class="stat-num">4.9/5</span>
+                </li>
+                <li class="stat-divider"></li>
+                <li>
+                  <img src="images/cup-icon.svg" alt="Experience" class="stat-icon" />
+                  <span class="stat-num">10+</span> <span class="stat-label">Years</span>
+                </li>
+                <li class="stat-divider"></li>
+                <li>
+                  <img src="images/graducation-icon.svg" alt="Professionals" class="stat-icon" />
+                  <span class="stat-num">10000+</span> <span class="stat-label">Professionals</span>
+                </li>
+              </ul>
+
+              <a href="#" class="btn-brand poppins-fonts">
+                <span class="btn-text">Apply Now</span>
+                <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right form -->
+          <div class="col-12 col-lg-5 col-xl-4 offset-xl-1">
+            <div class="hero-form-wrap">
+              <img src="images/flow-circle-bg-img.webp" alt="" class="form-glow" aria-hidden="true" />
+
+              <div class="hero-form-card">
+                <h2 class="form-title poppins-fonts">Book a Free Demo</h2>
+                <p class="form-sub">Get a callback from our counsellor within 24 hours.</p>
+
+                <form action="#" method="post">
+                  <input
+                    type="text"
+                    class="form-control hero-input"
+                    placeholder="Full name"
+                    aria-label="Full name"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    class="form-control hero-input"
+                    placeholder="Phone number"
+                    aria-label="Phone number"
+                    required
+                  />
+                  <input
+                    type="email"
+                    class="form-control hero-input"
+                    placeholder="Email address"
+                    aria-label="Email address"
+                    required
+                  />
+
+                  <button type="submit" class="btn-brand w-100 poppins-fonts form-btn">
+                    <span class="btn-text">Get a Callback</span>
+                    <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
+                  </button>
+                </form>
+
+                <p class="form-note">Your details are safe. No spam, ever.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Alumni ===== -->
+    <section class="alumni-section">
+      <div class="custom-container">
+        <div class="row align-items-center g-3 g-lg-4">
+          <div class="col-12 col-lg-3 alumni-title-col">
+            <span class="alumni-glow" aria-hidden="true"></span>
+            <div class="alumni-title poppins-fonts">
+              <span class="d-block">Our Alumni</span>
+              <span class="d-block alumni-gradient">Work Here</span>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <div class="alumni-box">
+              <div class="logo-marquee">
+                <div class="logo-group">
+                  <div class="logo-card"><img src="images/logo-img-1.webp" alt="Alumni company 1" /></div>
+                  <div class="logo-card"><img src="images/logo-img-2.webp" alt="Alumni company 2" /></div>
+                  <div class="logo-card"><img src="images/logo-img-3.webp" alt="Alumni company 3" /></div>
+                  <div class="logo-card"><img src="images/logo-img-4.webp" alt="Alumni company 4" /></div>
+                  <div class="logo-card"><img src="images/logo-img-5.webp" alt="Alumni company 5" /></div>
+                  <div class="logo-card"><img src="images/logo-img-6.webp" alt="Alumni company 6" /></div>
+                  <div class="logo-card"><img src="images/logo-img-7.webp" alt="Alumni company 7" /></div>
+                  <div class="logo-card"><img src="images/logo-img-8.webp" alt="Alumni company 8" /></div>
+                  <div class="logo-card"><img src="images/logo-img-9.webp" alt="Alumni company 9" /></div>
+                  <div class="logo-card"><img src="images/logo-img-10.webp" alt="Alumni company 10" /></div>
+                  <div class="logo-card"><img src="images/logo-img-11.webp" alt="Alumni company 11" /></div>
+                  <div class="logo-card"><img src="images/logo-img-12.webp" alt="Alumni company 12" /></div>
+                  <div class="logo-card"><img src="images/logo-img-13.webp" alt="Alumni company 13" /></div>
+                  <div class="logo-card"><img src="images/logo-img-14.webp" alt="Alumni company 14" /></div>
+                  <div class="logo-card"><img src="images/logo-img-15.webp" alt="Alumni company 15" /></div>
+                  <div class="logo-card"><img src="images/logo-img-16.webp" alt="Alumni company 16" /></div>
+                  <div class="logo-card"><img src="images/logo-img-17.webp" alt="Alumni company 17" /></div>
+                  <div class="logo-card"><img src="images/logo-img-18.webp" alt="Alumni company 18" /></div>
+                  <div class="logo-card"><img src="images/logo-img-19.webp" alt="Alumni company 19" /></div>
+                </div>
+                <!-- duplicate group (seamless loop) -->
+                <div class="logo-group" aria-hidden="true">
+                  <div class="logo-card"><img src="images/logo-img-1.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-2.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-3.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-4.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-5.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-6.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-7.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-8.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-9.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-10.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-11.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-12.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-13.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-14.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-15.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-16.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-17.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-18.webp" alt="" /></div>
+                  <div class="logo-card"><img src="images/logo-img-19.webp" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Section 1: What You Learn ===== -->
+    <section class="learn-section">
+      <div class="custom-container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-5">
+            <div class="learn-head">
+              <span class="learn-eyebrow poppins-fonts">Master Skills. Build a Career.</span>
+              <h2 class="learn-title poppins-fonts">What You Learn <br />in this Generative <br />AI Course</h2>
+              <p class="learn-desc inter-fonts">
+                Learn core AI concepts, model fundamentals, generative AI workflows, and real-time AI implementation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <ul class="learn-grid list-unstyled poppins-fonts">
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-1.webp')"></span>
+                <span class="learn-text">Foundations of AI</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-2.webp')"></span>
+                <span class="learn-text">Neural Networks &amp; Model Basics</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-3.webp')"></span>
+                <span class="learn-text">Generative AI Concepts</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-4.webp')"></span>
+                <span class="learn-text">Prompting Fundamentals</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-5.webp')"></span>
+                <span class="learn-text">Text, Image &amp; Speech Generation Concepts</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-6.webp')"></span>
+                <span class="learn-text">Retrieval &amp; Knowledge Integration</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-7.webp')"></span>
+                <span class="learn-text">Model Optimization Basics</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-8.webp')"></span>
+                <span class="learn-text">Responsible &amp; Ethical AI</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-9.webp')"></span>
+                <span class="learn-text">AI Workflow Automation</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-10.webp')"></span>
+                <span class="learn-text">AI Application Integration</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-11.webp')"></span>
+                <span class="learn-text">Model Deployment Concepts</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+              <li class="learn-item">
+                <span class="ai-icon" style="--icon: url('../images/ai-icon-12.webp')"></span>
+                <span class="learn-text">Live Project</span>
+                <i class="bi bi-chevron-right"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 2: Why Oranium Tech ===== -->
+    <section class="why-section">
+      <div class="custom-container">
+        <div class="why-head text-center">
+          <span class="why-eyebrow poppins-fonts">Why Oranium Tech</span>
+          <h2 class="why-title poppins-fonts">How Oranium Tech Offers <br />One of the Best Generative AI Courses</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="row g-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="why-card">
+                <div class="why-img">
+                  <div class="img-box">
+                    <img src="images/offered-img-1.webp" alt="Industry Expert Trainers" />
+                  </div>
+                  <span class="why-badge poppins-fonts">01</span>
+                </div>
+                <div class="why-body">
+                  <h3 class="why-card-title poppins-fonts">Industry Expert Trainers</h3>
+                  <p class="why-card-desc inter-fonts">
+                    Learn from experienced professionals who have applied these AI concepts in their 10+ years of
+                    experience at the top companies in the world.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="why-card">
+                <div class="why-img">
+                  <div class="img-box">
+                    <img src="images/offered-img-2.webp" alt="Learn from Projects" />
+                  </div>
+                  <span class="why-badge poppins-fonts">02</span>
+                </div>
+                <div class="why-body">
+                  <h3 class="why-card-title poppins-fonts">Learn from Projects</h3>
+                  <p class="why-card-desc inter-fonts">
+                    You work directly on live, working projects from a wide range of companies. Along with skills, you
+                    build a professional portfolio of AI applications.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="why-card">
+                <div class="why-img">
+                  <div class="img-box">
+                    <img src="images/offered-img-3.webp" alt="Curriculum Updated Regularly" />
+                  </div>
+                  <span class="why-badge poppins-fonts">03</span>
+                </div>
+                <div class="why-body">
+                  <h3 class="why-card-title poppins-fonts">Curriculum Updated Regularly</h3>
+                  <p class="why-card-desc inter-fonts">
+                    The curriculum gets updated with all the latest industry trends and technologies that place you
+                    ahead of your peers in your career.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+              <article class="why-card">
+                <div class="why-img">
+                  <div class="img-box">
+                    <img src="images/offered-img-4.webp" alt="100% Placement Support" />
+                  </div>
+                  <span class="why-badge poppins-fonts">04</span>
+                </div>
+                <div class="why-body">
+                  <h3 class="why-card-title poppins-fonts">100% Placement Support</h3>
+                  <p class="why-card-desc inter-fonts">
+                    We provide end-to-end job support with resume building, interview preparation, mock interviews, and
+                    direct connections with our hiring partners.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 3: Certificate ===== -->
+    <section class="cert-section">
+      <div class="custom-container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6">
+            <div class="cert-content">
+              <h2 class="cert-title poppins-fonts">Get Certified as an <br />AI-Enabled Professional</h2>
+              <p class="cert-desc inter-fonts">
+                After you complete this program, you get an official certificate from Oranium Tech, recognized by the
+                top companies in the industry. You can showcase this on your LinkedIn profile or attach it with your CV
+                for employers.
+              </p>
+              <a href="#" class="btn-brand poppins-fonts">
+                <span class="btn-text">Apply Now</span>
+                <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="cert-wrap">
+              <img src="images/certificate-img.webp" alt="Oranium Tech certificate of completion" class="cert-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 4: Top AI Tools ===== -->
+    <section class="tools-section">
+      <div class="custom-container">
+        <h2 class="tools-title poppins-fonts">Work on the Top AI Tools</h2>
+
+        <div class="tools-box">
+          <img src="images/bg-img-left.webp" alt="" class="tools-wave tools-wave-left" aria-hidden="true" />
+          <img src="images/bg-img-right.webp" alt="" class="tools-wave tools-wave-right" aria-hidden="true" />
+
+          <div class="tools-list">
+            <img src="images/ai-agent-img-2.webp" alt="n8n" class="tool-card" />
+            <img src="images/ai-agent-img-4.webp" alt="Perplexity" class="tool-card" />
+            <img src="images/ai-agent-img-1.webp" alt="Claude" class="tool-card" />
+            <img src="images/ai-agent-img-3.webp" alt="ChatGPT" class="tool-card" />
+            <img src="images/ai-agent-img-5.webp" alt="Gemini" class="tool-card" />
+          </div>
+        </div>
+
+        <p class="tools-more poppins-fonts">++ many more</p>
+      </div>
+    </section>
+
+    <!-- ===== Section 5: 20% OFF banner ===== -->
+    <section class="offer-section">
+      <div class="custom-container">
+        <div class="offer-box">
+          <div class="offer-left">
+            <span class="offer-discount poppins-fonts" data-text="20%&#10;OFF">20%<br />OFF</span>
+          </div>
+
+          <span class="offer-divider" aria-hidden="true"></span>
+
+          <div class="offer-right">
+            <h2 class="offer-title poppins-fonts">
+              Enroll in the Next <span class="offer-yellow">24 Hours</span> <br />
+              <span class="offer-orange">Get a Discount</span>
+            </h2>
+            <p class="offer-desc inter-fonts">
+              If you enroll right now, you get an extra discount on the original price of the program.
+            </p>
+            <div class="offer-actions">
+              <span class="btn-limited poppins-fonts">Limited Time Offer</span>
+              <a href="#" class="btn-brand btn-yellow poppins-fonts">
+                <span class="btn-text">Apply Now</span>
+                <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 6: Testimonials ===== -->
+    <section class="testi-section">
+      <div class="custom-container">
+        <h2 class="testi-title poppins-fonts">Read What Our Students Say</h2>
+
+        <div class="testi-wrap">
+          <!-- Featured testimonial (updates when a small card is clicked) -->
+          <div class="testi-featured" id="testiFeatured">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testi-featured-text inter-fonts" id="featText">
+              I always wanted to learn AI, but I wasn't sure where to start. This program helped me understand the
+              basics step by step, and the practical sessions made things much easier to follow. I feel a lot more
+              confident about exploring AI tools and working on projects now.
+            </p>
+            <div class="testi-featured-author poppins-fonts">
+              <img src="images/testmonial-img-1.webp" alt="Rajat Kaushik" id="featImg" />
+              <span id="featName">Rajat Kaushik</span>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper testi-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="testi-card" tabindex="0">
+                  <div class="testi-card-head">
+                    <img src="images/testmonial-img-1.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Aarav Reddy</span>
+                    <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+                    <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
+                  </div>
+                  <p class="t-text inter-fonts">
+                    Before joining, I had tried a few AI tools, but I didn't really understand how to use them properly.
+                    The course helped me see how Generative AI can be used for different tasks and projects. I
+                    especially liked learning by doing instead of just going through theory.
+                  </p>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="testi-card" tabindex="0">
+                  <div class="testi-card-head">
+                    <img src="images/testmonial-img-1.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Ishaan Reddy</span>
+                    <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+                    <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
+                  </div>
+                  <p class="t-text inter-fonts">
+                    I wanted to upskill and understand how AI is being used in the industry. This program gave me a
+                    better understanding of AI and its practical applications. I can already see how these skills could
+                    help me work smarter and bring new ideas into my work.
+                  </p>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="testi-card" tabindex="0">
+                  <div class="testi-card-head">
+                    <img src="images/testmonial-img-2.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Samiksha</span>
+                    <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+                    <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
+                  </div>
+                  <p class="t-text inter-fonts">
+                    What I liked most was getting to explore AI beyond what we usually learn in college. The hands-on
+                    approach made the concepts more interesting, and it helped me understand how I could use what I
+                    learned in real projects. It was a good way to start building my AI knowledge.
+                  </p>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="testi-card" tabindex="0">
+                  <div class="testi-card-head">
+                    <img src="images/testmonial-img-3.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Rajat Kaushik</span>
+                    <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+                    <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
+                  </div>
+                  <p class="t-text inter-fonts">
+                    I always wanted to learn AI, but I wasn't sure where to start. This program helped me understand the
+                    basics step by step, and the practical sessions made things much easier to follow. I feel a lot more
+                    confident about exploring AI tools and working on projects now.
+                  </p>
+                </article>
+              </div>
+
+              <!-- Placeholder reviews: apne real reviews se replace kar lena -->
+              <div class="swiper-slide">
+                <article class="testi-card" tabindex="0">
+                  <div class="testi-card-head">
+                    <img src="images/testmonial-img-1.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Student Name</span>
+                    <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+                    <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
+                  </div>
+                  <p class="t-text inter-fonts">Add the student's review text here.</p>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="testi-card" tabindex="0">
+                  <div class="testi-card-head">
+                    <img src="images/testmonial-img-2.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Student Name</span>
+                    <i class="bi bi-quote t-quote" aria-hidden="true"></i>
+                    <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
+                  </div>
+                  <p class="t-text inter-fonts">Add the student's review text here.</p>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination testi-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 7: FAQ ===== -->
+    <section class="faq-section">
+      <div class="custom-container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-6">
+            <h2 class="faq-title poppins-fonts">Frequently Asked <br />Questions (FAQs)</h2>
+            <p class="faq-sub inter-fonts">Haven't found what you're looking for? <a href="#">Contact us</a></p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="accordion faq-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                  >
+                    Is generative AI in demand?
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">
+                    Yes. Almost every job description today on LinkedIn and Naukri has AI/gen-AI as a mandatory
+                    prerequisite.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    Do I need to be technical / have technical knowledge for this course?
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">
+                    No. The course starts from the basics, so you can join even without a technical background.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                  >
+                    Is this course online or offline?
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                    aria-expanded="false"
+                    aria-controls="faq4"
+                  >
+                    How will this course help me as an employee?
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                    aria-expanded="false"
+                    aria-controls="faq5"
+                  >
+                    How much salary hike does this course provide?
+                  </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                    aria-expanded="false"
+                    aria-controls="faq6"
+                  >
+                    How long does this course take to complete?
+                  </button>
+                </h3>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed poppins-fonts"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq7"
+                    aria-expanded="false"
+                    aria-controls="faq7"
+                  >
+                    Is this course practical or just theoretical?
+                  </button>
+                </h3>
+                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 8: CTA ===== -->
+    <section class="cta-section">
+      <div class="custom-container text-center">
+        <span class="cta-badge poppins-fonts">Limited Seats</span>
+        <h2 class="cta-title poppins-fonts">
+          Ready to Become
+          <span class="cta-gradient">
+            Irreplaceable in the Age of AI?
+            <img src="images/heding-border.webp" class="cta-scribble" />
+          </span>
+        </h2>
+        <a href="#" class="btn-brand poppins-fonts">
+          <span class="btn-text">Apply Now</span>
+          <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="custom-container">
+        <div class="footer-row poppins-fonts">
+          <p class="footer-left"><strong>Oranium Tech</strong> <span>· Gen AI</span></p>
+          <p class="footer-right">Design and Developed By Mediagarh</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== Scripts (Bootstrap bundle ke baad) ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script>
+      // Testimonials slider
+      const testiSwiper = new Swiper('.testi-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: false,
+        grabCursor: true,
+        autoplay: { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true },
+        pagination: { el: '.testi-pagination', clickable: true },
+        breakpoints: {
+          576: { slidesPerView: 2 },
+          992: { slidesPerView: 3 },
+        },
+      });
+
+      // Click on a small card -> show it in the big featured card
+      const feat = document.getElementById('testiFeatured');
+      const featText = document.getElementById('featText');
+      const featName = document.getElementById('featName');
+      const featImg = document.getElementById('featImg');
+
+      function showFeatured(card) {
+        feat.classList.add('is-changing');
+        setTimeout(() => {
+          featText.textContent = card.querySelector('.t-text').textContent.trim();
+          featName.textContent = card.querySelector('.t-name').textContent.trim();
+          featImg.src = card.querySelector('.t-img').src;
+          featImg.alt = featName.textContent;
+          feat.classList.remove('is-changing');
+        }, 200);
+      }
+
+      document.querySelectorAll('.testi-card').forEach((card) => {
+        card.addEventListener('click', () => showFeatured(card));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            showFeatured(card);
+          }
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
