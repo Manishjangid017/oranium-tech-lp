@@ -54,6 +54,20 @@
     <meta name="msapplication-TileColor" content="#184276" />
     <meta name="application-name" content="Oranium Tech" />
 
+    <!-- ===== Google Tag Manager ===== -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TNBX4HJ7');
+    </script>
+
     <!-- Google Fonts: Poppins + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,6 +85,16 @@
     <link href="css/animation.css" rel="stylesheet" />
   </head>
   <body class="inter-fonts">
+    <!-- ===== Google Tag Manager (noscript) ===== -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TNBX4HJ7"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
     <!-- ===== Sticky top (strip + header) ===== -->
     <!-- Top marquee strip -->
     <div>
@@ -516,7 +540,7 @@
               If you enroll right now, you get an extra discount on the original price of the program.
             </p>
             <div class="offer-actions">
-              <a class="btn-limited poppins-fonts" href="#apply-now">Limited Time Offer</a>
+              <a class="btn-limited poppins-fonts text-decoration-none" href="#apply-now">Limited Time Offer</a>
               <a href="#apply-now" class="btn-brand btn-yellow poppins-fonts text-decoration-none">
                 <span class="btn-text">Apply Now</span>
                 <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
@@ -936,6 +960,7 @@
             Email: email,
             Date: date,
             PageUrl: pageUrl,
+            Source: 'Gen Ai Leads',
           });
 
           // POST to Google Sheet via no-cors (Apps Script requires this)
@@ -947,21 +972,13 @@
           })
             .then(function () {
               // Build thank-you URL with query params
-              const params = new URLSearchParams({
-                name: name,
-                phone: phone,
-                email: email,
-              });
-              window.location.href = 'thank-you.html?' + params.toString();
+              const params = new URLSearchParams({ name, phone, email });
+              window.location.href = 'thank-you?' + params.toString();
             })
             .catch(function () {
               // Even on network error, redirect (sheet may have received it)
-              const params = new URLSearchParams({
-                name: name,
-                phone: phone,
-                email: email,
-              });
-              window.location.href = 'thank-you.html?' + params.toString();
+              const params = new URLSearchParams({ name, phone, email });
+              window.location.href = 'thank-you?' + params.toString();
             });
         });
       })();
