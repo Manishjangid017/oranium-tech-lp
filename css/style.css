@@ -167,7 +167,8 @@ img {
   display: flex;
   align-items: center;
   padding: 70px 0;
-  overflow: hidden;
+  overflow: hidden; /* fallback */
+  overflow: clip;
 }
 
 /* Background image on pseudo-element so it animates independently */
