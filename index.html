@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===== Primary Meta ===== -->
     <title>Oranium Tech | Gen AI Course</title>
+    <meta
+      name="description"
+      content="Master Generative AI with Oranium Tech's industry-led program. Learn from real projects, get certified, and land your dream job. Enroll now and save 20%."
+    />
+    <meta
+      name="keywords"
+      content="Generative AI course, Gen AI training, AI certification, Oranium Tech, AI course India, machine learning course"
+    />
+    <meta name="author" content="Oranium Tech" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://oraniumtech.com/" />
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- ===== Open Graph (Facebook / LinkedIn / WhatsApp) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Oranium Tech" />
+    <meta property="og:title" content="Oranium Tech | Gen AI Course — 20% OFF, Enroll Today" />
+    <meta
+      property="og:description"
+      content="Master Generative AI with Oranium Tech's industry-led program. Learn from real projects, get certified, and land your dream job."
+    />
+    <meta property="og:url" content="https://oraniumtech.com/" />
+    <meta property="og:image" content="https://oraniumtech.com/images/og-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Oranium Tech — Generative AI Course" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- ===== Twitter / X Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@OraniumTech" />
+    <meta name="twitter:creator" content="@OraniumTech" />
+    <meta name="twitter:title" content="Oranium Tech | Gen AI Course — 20% OFF, Enroll Today" />
+    <meta
+      name="twitter:description"
+      content="Master Generative AI with Oranium Tech's industry-led program. Learn from real projects, get certified, and land your dream job."
+    />
+    <meta name="twitter:image" content="https://oraniumtech.com/images/og-image.webp" />
+    <meta name="twitter:image:alt" content="Oranium Tech — Generative AI Course" />
+
+    <!-- ===== Theme & App ===== -->
+    <meta name="theme-color" content="#184276" />
+    <meta name="msapplication-TileColor" content="#184276" />
+    <meta name="application-name" content="Oranium Tech" />
 
     <!-- Google Fonts: Poppins + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,11 +68,12 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animation.css" rel="stylesheet" />
   </head>
   <body class="inter-fonts">
     <!-- ===== Sticky top (strip + header) ===== -->
-    <div class="site-top">
-      <!-- Top marquee strip -->
+    <!-- Top marquee strip -->
+    <div>
       <div class="top-strip">
         <div class="marquee-track">
           <div class="marquee-group">
@@ -59,8 +109,8 @@
             </a>
 
             <div class="header-actions d-flex align-items-center gap-2">
-              <a href="#" class="btn-help poppins-fonts">Help <i class="bi bi-question-circle"></i></a>
-              <a href="#" class="btn-book poppins-fonts">Book Call <i class="bi bi-arrow-right"></i></a>
+              <a href="#apply-now" class="btn-help poppins-fonts">Help <i class="bi bi-question-circle"></i></a>
+              <a href="#apply-now" class="btn-book poppins-fonts">Book Call <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -104,7 +154,7 @@
                 </li>
               </ul>
 
-              <a href="#" class="btn-brand poppins-fonts">
+              <a href="#apply-now" class="btn-brand poppins-fonts hero-btn">
                 <span class="btn-text">Apply Now</span>
                 <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
               </a>
@@ -112,7 +162,7 @@
           </div>
 
           <!-- Right form -->
-          <div class="col-12 col-lg-5 col-xl-4 offset-xl-1">
+          <div class="col-12 col-lg-5 col-xl-4 offset-xl-1" id="apply-now">
             <div class="hero-form-wrap">
               <img src="images/flow-circle-bg-img.webp" alt="" class="form-glow" aria-hidden="true" />
 
@@ -120,9 +170,11 @@
                 <h2 class="form-title poppins-fonts">Book a Free Demo</h2>
                 <p class="form-sub">Get a callback from our counsellor within 24 hours.</p>
 
-                <form action="#" method="post">
+                <form id="leadForm" novalidate>
                   <input
                     type="text"
+                    id="f-name"
+                    name="Name"
                     class="form-control hero-input"
                     placeholder="Full name"
                     aria-label="Full name"
@@ -130,20 +182,26 @@
                   />
                   <input
                     type="tel"
+                    id="f-phone"
+                    name="Phone"
                     class="form-control hero-input"
                     placeholder="Phone number"
                     aria-label="Phone number"
+                    pattern="[6-9][0-9]{9}"
+                    maxlength="10"
                     required
                   />
                   <input
                     type="email"
+                    id="f-email"
+                    name="Email"
                     class="form-control hero-input"
                     placeholder="Email address"
                     aria-label="Email address"
                     required
                   />
 
-                  <button type="submit" class="btn-brand w-100 poppins-fonts form-btn">
+                  <button type="submit" id="formSubmitBtn" class="btn-brand w-100 poppins-fonts form-btn">
                     <span class="btn-text">Get a Callback</span>
                     <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
                   </button>
@@ -401,7 +459,7 @@
                 top companies in the industry. You can showcase this on your LinkedIn profile or attach it with your CV
                 for employers.
               </p>
-              <a href="#" class="btn-brand poppins-fonts">
+              <a href="#apply-now" class="btn-brand poppins-fonts">
                 <span class="btn-text">Apply Now</span>
                 <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
               </a>
@@ -458,8 +516,8 @@
               If you enroll right now, you get an extra discount on the original price of the program.
             </p>
             <div class="offer-actions">
-              <span class="btn-limited poppins-fonts">Limited Time Offer</span>
-              <a href="#" class="btn-brand btn-yellow poppins-fonts">
+              <a class="btn-limited poppins-fonts" href="#apply-now">Limited Time Offer</a>
+              <a href="#apply-now" class="btn-brand btn-yellow poppins-fonts text-decoration-none">
                 <span class="btn-text">Apply Now</span>
                 <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
               </a>
@@ -514,7 +572,7 @@
               <div class="swiper-slide">
                 <article class="testi-card" tabindex="0">
                   <div class="testi-card-head">
-                    <img src="images/testmonial-img-1.webp" alt="" class="t-img" />
+                    <img src="images/testmonial-img-3.webp" alt="" class="t-img" />
                     <span class="t-name poppins-fonts">Ishaan Reddy</span>
                     <i class="bi bi-quote t-quote" aria-hidden="true"></i>
                     <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
@@ -546,15 +604,15 @@
               <div class="swiper-slide">
                 <article class="testi-card" tabindex="0">
                   <div class="testi-card-head">
-                    <img src="images/testmonial-img-3.webp" alt="" class="t-img" />
-                    <span class="t-name poppins-fonts">Rajat Kaushik</span>
+                    <img src="images/testimonial-img-4.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Nitesh Kaushal</span>
                     <i class="bi bi-quote t-quote" aria-hidden="true"></i>
                     <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
                   </div>
                   <p class="t-text inter-fonts">
-                    I always wanted to learn AI, but I wasn't sure where to start. This program helped me understand the
-                    basics step by step, and the practical sessions made things much easier to follow. I feel a lot more
-                    confident about exploring AI tools and working on projects now.
+                    AI is growing so quickly, and I wanted to make sure I wasn’t left behind. This is the best
+                    generative AI course. It gave me a more structured way to learn about AI and Generative AI. It also
+                    motivated me to keep practising and explore more projects on my own.
                   </p>
                 </article>
               </div>
@@ -563,24 +621,32 @@
               <div class="swiper-slide">
                 <article class="testi-card" tabindex="0">
                   <div class="testi-card-head">
-                    <img src="images/testmonial-img-1.webp" alt="" class="t-img" />
-                    <span class="t-name poppins-fonts">Student Name</span>
+                    <img src="images/testimonial-img-5.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Rajat Kaushik</span>
                     <i class="bi bi-quote t-quote" aria-hidden="true"></i>
                     <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
                   </div>
-                  <p class="t-text inter-fonts">Add the student's review text here.</p>
+                  <p class="t-text inter-fonts">
+                    I always wanted to learn AI, but I wasn’t sure where to start. This program helped me understand the
+                    basics step by step, and the practical sessions made things much easier to follow. I feel a lot more
+                    confident about exploring AI tools and working on projects now.
+                  </p>
                 </article>
               </div>
 
               <div class="swiper-slide">
                 <article class="testi-card" tabindex="0">
                   <div class="testi-card-head">
-                    <img src="images/testmonial-img-2.webp" alt="" class="t-img" />
-                    <span class="t-name poppins-fonts">Student Name</span>
+                    <img src="images/testimonial-img-6.webp" alt="" class="t-img" />
+                    <span class="t-name poppins-fonts">Meghna</span>
                     <i class="bi bi-quote t-quote" aria-hidden="true"></i>
                     <i class="bi bi-arrow-up-right t-arrow" aria-hidden="true"></i>
                   </div>
-                  <p class="t-text inter-fonts">Add the student's review text here.</p>
+                  <p class="t-text inter-fonts">
+                    I used to think AI was something only people with a strong technical background could understand.
+                    Learning about it in a more structured way made it feel much more approachable. I now have a clearer
+                    idea of what Generative AI can do and where I can apply it.
+                  </p>
                 </article>
               </div>
             </div>
@@ -601,6 +667,7 @@
 
           <div class="col-12 col-lg-6">
             <div class="accordion faq-accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -622,6 +689,7 @@
                 </div>
               </div>
 
+              <!-- FAQ 2 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -637,11 +705,13 @@
                 </h3>
                 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                   <div class="accordion-body inter-fonts">
-                    No. The course starts from the basics, so you can join even without a technical background.
+                    No. Even if you've opened ChatGPT or Gemini just a few times, you can pursue this course. Our
+                    experts teach you from scratch to advanced.
                   </div>
                 </div>
               </div>
 
+              <!-- FAQ 3 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -656,10 +726,14 @@
                   </button>
                 </h3>
                 <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                  <div class="accordion-body inter-fonts">
+                    While we primarily provide AI training in Chennai, you can fill out the form, and we can discuss the
+                    online availability of this program.
+                  </div>
                 </div>
               </div>
 
+              <!-- FAQ 4 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -674,10 +748,14 @@
                   </button>
                 </h3>
                 <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                  <div class="accordion-body inter-fonts">
+                    Automation workflows taught in this artificial intelligence course in Chennai will help you delegate
+                    repetitive, manual tasks to AI—improving your productivity.
+                  </div>
                 </div>
               </div>
 
+              <!-- FAQ 5 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -692,10 +770,14 @@
                   </button>
                 </h3>
                 <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                  <div class="accordion-body inter-fonts">
+                    There isn't a specific number. Statistically, employees with AI skills are paid
+                    <strong>28% more</strong> than those who don't have them.
+                  </div>
                 </div>
               </div>
 
+              <!-- FAQ 6 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -710,10 +792,13 @@
                   </button>
                 </h3>
                 <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                  <div class="accordion-body inter-fonts">
+                    The course is <strong>10–12 weeks</strong> long—approximately 3 months.
+                  </div>
                 </div>
               </div>
 
+              <!-- FAQ 7 -->
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -724,11 +809,15 @@
                     aria-expanded="false"
                     aria-controls="faq7"
                   >
-                    Is this course practical or just theoretical?
+                    Do I work with AI tools or is this just theoretical?
                   </button>
                 </h3>
                 <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body inter-fonts">Add your answer here.</div>
+                  <div class="accordion-body inter-fonts">
+                    You work hands-on with the top AI tools like <strong>ChatGPT, Gemini, Claude</strong>, etc. This is
+                    not like other AI courses in Chennai that are only theoretical in nature and add no value or teach
+                    nothing that can be practically executed.
+                  </div>
                 </div>
               </div>
             </div>
@@ -748,7 +837,7 @@
             <img src="images/heding-border.webp" class="cta-scribble" />
           </span>
         </h2>
-        <a href="#" class="btn-brand poppins-fonts">
+        <a href="#apply-now" class="btn-brand poppins-fonts">
           <span class="btn-text">Apply Now</span>
           <span class="btn-icon-box"><i class="bi bi-arrow-right"></i></span>
         </a>
@@ -772,7 +861,7 @@
       const testiSwiper = new Swiper('.testi-swiper', {
         slidesPerView: 1,
         spaceBetween: 16,
-        loop: false,
+        loop: true,
         grabCursor: true,
         autoplay: { delay: 4500, disableOnInteraction: false, pauseOnMouseEnter: true },
         pagination: { el: '.testi-pagination', clickable: true },
@@ -809,6 +898,95 @@
         });
       });
     </script>
+
+    <!-- ===== Google Sheet Form Submit ===== -->
+    <script>
+      (function () {
+        const SHEET_URL =
+          'https://script.google.com/macros/s/AKfycbzTi1o26kc2HYlutQJSiOEWeUKC6BT4KdnmxGHuX-qom8m1NEY7gnROXstUz_-UTkMOMw/exec';
+
+        const form = document.getElementById('leadForm');
+        const btn = document.getElementById('formSubmitBtn');
+        const btnText = btn.querySelector('.btn-text');
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          // Basic HTML5 validation check
+          if (!form.checkValidity()) {
+            form.classList.add('was-validated');
+            return;
+          }
+
+          // Read values
+          const name = document.getElementById('f-name').value.trim();
+          const phone = document.getElementById('f-phone').value.trim();
+          const email = document.getElementById('f-email').value.trim();
+          const date = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+          const pageUrl = window.location.href;
+
+          // Loading state
+          btn.disabled = true;
+          btnText.textContent = 'Submitting…';
+
+          // Build payload — matches your Apps Script parameter names exactly
+          const payload = new URLSearchParams({
+            Name: name,
+            Phone: phone,
+            Email: email,
+            Date: date,
+            PageUrl: pageUrl,
+          });
+
+          // POST to Google Sheet via no-cors (Apps Script requires this)
+          fetch(SHEET_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: payload.toString(),
+          })
+            .then(function () {
+              // Build thank-you URL with query params
+              const params = new URLSearchParams({
+                name: name,
+                phone: phone,
+                email: email,
+              });
+              window.location.href = 'thank-you.html?' + params.toString();
+            })
+            .catch(function () {
+              // Even on network error, redirect (sheet may have received it)
+              const params = new URLSearchParams({
+                name: name,
+                phone: phone,
+                email: email,
+              });
+              window.location.href = 'thank-you.html?' + params.toString();
+            });
+        });
+      })();
+    </script>
+
+    <!-- ===== Fixed Floating Buttons (Call + WhatsApp) ===== -->
+    <div class="float-btns" aria-label="Quick contact">
+      <!-- Call -->
+      <a href="tel:+918072363772" class="float-btn float-btn-call" aria-label="Call us" title="Call Us">
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/918072363772?text=Hello,%20I%E2%80%99m%20interested%20in%20joining%20Oranium%20Tech.%20Please%20share%20the%20course%20details,%20fee%20structure,%20placement%20support%20and%20upcoming%20batch%20schedules.%20Kindly%20connect%20me%20with%20a%20counsellor."
+        class="float-btn float-btn-wa"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        title="WhatsApp Us"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animation.js"></script>
   </body>
 </html>

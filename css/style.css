@@ -575,118 +575,8 @@ img {
 }
 
 /* =========================================================
-   Responsive
+   Responsive – Hero + Alumni (merged into global breakpoints below)
    ========================================================= */
-
-/* Tablet landscape / small desktop */
-@media (max-width: 1199.98px) {
-  .hero-section {
-    min-height: 560px;
-    padding: 60px 0;
-  }
-  .form-glow {
-    width: 170%;
-  }
-}
-
-/* Tablet */
-@media (max-width: 991.98px) {
-  .hero-section {
-    min-height: auto;
-    padding: 50px 0 60px;
-    background:
-      linear-gradient(180deg, rgba(5, 7, 13, 0.7) 0%, rgba(5, 7, 13, 0.88) 100%),
-      url('../images/hero-section-bg-img.webp') 70% center / cover no-repeat;
-  }
-  .hero-content {
-    text-align: center;
-  }
-  .hero-desc {
-    margin-inline: auto;
-  }
-  .hero-stats {
-    justify-content: center;
-  }
-  .hero-title {
-    font-size: clamp(28px, 5vw, 38px);
-  }
-  .form-glow {
-    width: 150%;
-  }
-  .alumni-title {
-    text-align: center;
-    border-left: 0;
-    padding-left: 0;
-  }
-}
-
-/* Mobile */
-@media (max-width: 575.98px) {
-  .strip-item {
-    font-size: 12px;
-    padding: 10px 0;
-  }
-  .strip-item::after {
-    margin: 0 28px;
-  }
-
-  .logo-img {
-    height: 38px;
-  }
-  .btn-help,
-  .btn-book {
-    font-size: 11px;
-    padding: 8px 11px;
-  }
-
-  .hero-section {
-    padding: 36px 0 44px;
-  }
-  .hero-title {
-    font-size: 28px;
-  }
-  .hero-desc {
-    font-size: 13px;
-  }
-  .hero-stats {
-    gap: 10px;
-  }
-  .stat-num {
-    font-size: 14px;
-  }
-  .btn-brand {
-    min-width: 160px;
-    font-size: 14px;
-  }
-
-  .hero-form-card {
-    padding: 18px 16px 14px;
-  }
-  .form-glow {
-    width: 130%;
-  }
-
-  .alumni-section {
-    padding: 18px 0;
-  }
-  .alumni-title {
-    font-size: 18px;
-  }
-  .logo-card {
-    width: 108px;
-    height: 48px;
-    padding: 8px 10px;
-  }
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track,
-  .logo-marquee,
-  .underline-text::after {
-    animation: none;
-  }
-}
 /* =========================================================
    Section 1: What You Learn
    ========================================================= */
@@ -943,89 +833,8 @@ img {
 }
 
 /* =========================================================
-   Responsive
+   Responsive – learn + why (merged into global breakpoints below)
    ========================================================= */
-
-/* Small desktop / large tablet landscape (992 - 1199) */
-@media (max-width: 1199.98px) {
-  .learn-item {
-    padding: 8px 12px;
-    gap: 10px;
-  }
-  .why-body {
-    padding: 24px 14px 24px;
-  }
-}
-
-/* Tablet (768 - 991): stacked, centered, 2-col grids */
-@media (max-width: 991.98px) {
-  .learn-head {
-    text-align: center;
-  }
-  .learn-desc {
-    margin-inline: auto;
-  }
-  .learn-title br {
-    display: none;
-  }
-  .learn-grid {
-    max-width: 720px;
-    margin-inline: auto;
-  }
-  .why-title br {
-    display: none;
-  }
-  .why-card {
-    max-width: 330px;
-  }
-}
-
-/* Mobile (<= 575) */
-@media (max-width: 575.98px) {
-  .learn-grid {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  .learn-item {
-    min-height: 48px;
-    font-size: 13px;
-  }
-  .learn-desc {
-    font-size: 13px;
-  }
-  .ai-icon {
-    width: 20px;
-    height: 20px;
-  }
-  .why-card {
-    max-width: 300px;
-  }
-  .why-card-title {
-    font-size: 14px;
-  }
-  .why-card-desc {
-    font-size: 12px;
-  }
-}
-
-/* Very small phones */
-@media (max-width: 359.98px) {
-  .learn-item {
-    padding: 8px 10px;
-    gap: 8px;
-  }
-  .why-card {
-    max-width: 100%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .learn-item,
-  .learn-item .bi,
-  .ai-icon {
-    transition: none;
-  }
-}
 
 /* =========================================================
    Section 3: Certificate
@@ -1295,109 +1104,8 @@ img {
 }
 
 /* =========================================================
-   Responsive
+   Responsive – cert + tools + offer (merged into global breakpoints below)
    ========================================================= */
-
-/* Tablet (<= 991): stack + center */
-@media (max-width: 991.98px) {
-  .cert-content {
-    text-align: center;
-  }
-  .cert-title br {
-    display: none;
-  }
-  .cert-desc {
-    margin-inline: auto;
-  }
-  .cert-wrap {
-    max-width: 440px;
-  }
-}
-
-/* Offer banner: stack on small tablets / phones */
-@media (max-width: 767.98px) {
-  .offer-box {
-    flex-direction: column;
-    gap: 22px;
-    padding: 34px 22px;
-    text-align: center;
-  }
-  .offer-divider {
-    width: 130px;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.85) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-  .offer-discount br {
-    display: none;
-  }
-  .offer-desc {
-    margin-inline: auto;
-  }
-  .offer-actions {
-    justify-content: center;
-  }
-  .offer-discount {
-    font-size: clamp(54px, 15vw, 72px);
-  }
-}
-
-/* Mobile (<= 575) */
-@media (max-width: 575.98px) {
-  .cert-wrap {
-    padding-inline: 16px;
-  }
-  .cert-desc {
-    font-size: 13px;
-  }
-
-  .tools-box {
-    padding-inline: 44px;
-  }
-  .tools-wave {
-    height: 56px;
-  }
-  .tool-card {
-    height: 30px;
-  }
-  .tools-list {
-    gap: 8px;
-  }
-
-  .offer-title br {
-    display: none;
-  }
-  .offer-desc {
-    font-size: 12px;
-  }
-}
-
-/* Very small phones */
-@media (max-width: 379.98px) {
-  .tools-box {
-    padding-inline: 30px;
-  }
-  .tools-wave {
-    height: 44px;
-  }
-  .tool-card {
-    height: 26px;
-  }
-  .offer-box {
-    padding: 28px 14px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .offer-discount::after {
-    animation: none;
-    background: none;
-  }
-}
 /* =========================================================
    Section 6: Testimonials
    ========================================================= */
@@ -1746,34 +1454,417 @@ img {
 }
 
 /* =========================================================
-   Responsive
+   Responsive – testi + faq + cta + footer (merged into global breakpoints below)
    ========================================================= */
+
+/* =================================================================
+   GLOBAL RESPONSIVE — all sections, one consolidated block
+   Breakpoints: 1199 | 991 | 767 | 575 | 479 | 359
+   ================================================================= */
+
+/* ── 1199: Large tablet landscape / small desktop ── */
+@media (max-width: 1199.98px) {
+  /* Hero */
+  .hero-section {
+    min-height: 560px;
+    padding: 60px 0;
+  }
+  .form-glow {
+    width: 170%;
+  }
+
+  /* Learn */
+  .learn-item {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  /* Why */
+  .why-body {
+    padding: 24px 14px;
+  }
+}
+
+/* ── 991: Tablet portrait ── */
 @media (max-width: 991.98px) {
+  /* ---- Hero ---- */
+  .hero-section {
+    min-height: auto;
+    padding: 50px 0 60px;
+  }
+  .hero-section::after {
+    background-position: 60% center;
+  }
+  .hero-section::before {
+    background: linear-gradient(180deg, rgba(5, 7, 13, 0.82) 0%, rgba(5, 7, 13, 0.9) 100%);
+  }
+  .hero-content {
+    text-align: start;
+  }
+  .hero-desc {
+    margin-inline: auto;
+  }
+  .hero-stats {
+    justify-content: start;
+  }
+  .hero-title {
+    font-size: clamp(28px, 5vw, 38px);
+  }
+  .form-glow {
+    width: 150%;
+  }
+  .hero-form-wrap {
+    max-width: 420px;
+  }
+
+  /* ---- Alumni ---- */
+  .alumni-title {
+    text-align: center;
+    border-left: 0;
+    padding-left: 0;
+    margin-left: 0 !important;
+  }
+
+  /* ---- Learn ---- */
+  .learn-section {
+    padding: 72px 0 64px;
+  }
+  .learn-head {
+    text-align: center;
+  }
+  .learn-desc {
+    margin-inline: auto;
+  }
+  .learn-title br {
+    display: none;
+  }
+  .learn-grid {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  /* ---- Why ---- */
+  .why-section {
+    padding: 60px 0;
+  }
+  .why-title br {
+    display: none;
+  }
+  .why-card {
+    max-width: 330px;
+  }
+
+  /* ---- Certificate ---- */
+  .cert-section {
+    padding: 52px 0;
+  }
+  .cert-content {
+    text-align: center;
+  }
+  .cert-title br {
+    display: none;
+  }
+  .cert-desc {
+    margin-inline: auto;
+  }
+  .cert-wrap {
+    max-width: 460px;
+  }
+  .cert-content .btn-brand {
+    margin-inline: auto;
+    display: inline-flex;
+  }
+
+  /* ---- Testi ---- */
+  .testi-wrap {
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  /* ---- FAQ ---- */
+  .faq-section {
+    padding: 56px 0;
+  }
   .faq-title br {
     display: none;
   }
   .faq-title {
     margin-bottom: 10px;
   }
-  .testi-wrap {
-    max-width: 620px;
+  .faq-accordion .accordion-button {
+    font-size: 18px;
+  }
+  .faq-accordion .accordion-body {
+    font-size: 15px;
+  }
+
+  /* ---- CTA ---- */
+  .cta-title {
+    font-size: 36px;
+    margin-bottom: 48px;
   }
 }
 
+/* ── 767: Small tablet / large phone landscape ── */
 @media (max-width: 767.98px) {
+  /* ---- Hero ---- */
+  .hero-section {
+    padding: 44px 0 52px;
+  }
+  .hero-form-wrap {
+    margin-top: 8px;
+  }
+
+  /* ---- Learn ---- */
+  .learn-section {
+    padding: 60px 0 52px;
+  }
+  .learn-title {
+    font-size: 30px;
+  }
+  .learn-desc {
+    font-size: 15px;
+  }
+
+  /* ---- Why ---- */
+  .why-title {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+
+  /* ---- Offer ---- */
+  .offer-box {
+    flex-direction: column;
+    gap: 20px;
+    padding: 36px 24px;
+    text-align: center;
+  }
+  .offer-divider {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .offer-discount br {
+    display: none;
+  }
+  .offer-discount::after {
+    white-space: nowrap;
+    content: '';
+    display: none;
+  }
+  .offer-desc {
+    margin-inline: auto;
+  }
+  .offer-actions {
+    justify-content: center;
+  }
+  .offer-discount {
+    font-size: clamp(56px, 15vw, 76px);
+    white-space: nowrap;
+  }
+  .offer-title {
+    font-size: 26px;
+  }
+
+  /* ---- FAQ ---- */
   .faq-title,
   .faq-sub {
     text-align: center;
   }
+  .faq-sub {
+    margin-top: 6px;
+  }
+
+  /* ---- Footer ---- */
   .footer-row {
     justify-content: center;
     text-align: center;
   }
 }
 
+/* ── 575: Mobile ── */
 @media (max-width: 575.98px) {
-  .testi-featured-text {
+  /* ---- Strip ---- */
+  .strip-item {
     font-size: 12px;
+    padding: 9px 0;
+  }
+  .strip-item::after {
+    margin: 0 24px;
+  }
+
+  /* ---- Header ---- */
+  .logo-img {
+    height: 36px;
+  }
+  .btn-help,
+  .btn-book {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  /* ---- Hero ---- */
+  .hero-section {
+    padding: 36px 0 44px;
+  }
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+  .hero-desc {
+    font-size: 13px;
+  }
+  .hero-stats {
+    gap: 10px;
+  }
+  .stat-num {
+    font-size: 20px;
+  }
+  .stat-label {
+    font-size: 13px;
+  }
+  .btn-brand {
+    min-width: 156px;
+    font-size: 14px;
+    gap: 20px;
+  }
+  .hero-form-card {
+    padding: 24px;
+  }
+  .form-glow {
+    width: 130%;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+
+  /* ---- Alumni ---- */
+  .alumni-section {
+    padding: 32px 0;
+  }
+  .alumni-title {
+    font-size: 28px;
+  }
+  .logo-card {
+    width: 104px;
+    height: 46px;
+    padding: 8px 10px;
+  }
+
+  /* ---- Learn ---- */
+  .learn-section {
+    padding: 52px 0 44px;
+  }
+  .learn-title {
+    font-size: 28px;
+  }
+  .learn-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .learn-item {
+    min-height: 48px;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .learn-desc {
+    font-size: 13px;
+  }
+  .ai-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* ---- Why ---- */
+  .why-section {
+    padding: 48px 0;
+  }
+  .why-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+  .why-card {
+    max-width: 300px;
+  }
+  .why-card-title {
+    font-size: 15px;
+  }
+  .why-card-desc {
+    font-size: 13px;
+  }
+
+  /* ---- Certificate ---- */
+  .cert-section {
+    padding: 44px 0;
+  }
+  .cert-title {
+    font-size: 28px;
+  }
+  .cert-desc {
+    font-size: 13px;
+  }
+  .cert-wrap {
+    padding-inline: 12px;
+    max-width: 340px;
+  }
+
+  /* ---- Tools ---- */
+  .tools-section {
+    padding: 32px 0 26px;
+  }
+  .tools-box {
+    padding-inline: 40px;
+  }
+  .tools-wave {
+    height: 52px;
+  }
+  .tool-card {
+    height: 30px;
+  }
+  .tools-list {
+    gap: 8px 10px;
+  }
+  .tools-title {
+    font-size: 16px;
+  }
+
+  /* ---- Offer ---- */
+  .offer-section {
+    padding: 36px 0;
+  }
+  .offer-box {
+    padding: 28px 16px;
+    gap: 16px;
+  }
+  .offer-discount {
+    font-size: 56px;
+    white-space: nowrap;
+  }
+
+  .offer-title {
+    font-size: 22px;
+  }
+  .offer-title br {
+    display: none;
+  }
+  .offer-desc {
+    font-size: 12px;
+  }
+
+  /* ---- Testimonials ---- */
+  .testi-section {
+    padding: 36px 0 24px;
+  }
+  .testi-featured {
+    padding: 28px 18px 18px;
+  }
+  .testi-featured-text {
+    font-size: 13px;
   }
   .t-text {
     font-size: 12px;
@@ -1781,8 +1872,38 @@ img {
   .t-name {
     font-size: 12px;
   }
+  .testi-card {
+    padding: 18px 18px 38px;
+  }
+
+  /* ---- FAQ ---- */
+  .faq-section {
+    padding: 44px 0;
+  }
+  .faq-title {
+    font-size: 28px;
+  }
+  .faq-sub {
+    font-size: 14px;
+  }
   .faq-accordion .accordion-button {
-    padding: 16px 0 14px;
+    font-size: 15px;
+    padding: 14px 0 12px;
+  }
+  .faq-accordion .accordion-button::after {
+    font-size: 18px;
+  }
+  .faq-accordion .accordion-body {
+    font-size: 13px;
+  }
+
+  /* ---- CTA ---- */
+  .cta-section {
+    padding: 56px 0;
+  }
+  .cta-title {
+    font-size: 28px;
+    margin-bottom: 36px;
   }
   .cta-title br {
     display: none;
@@ -1791,12 +1912,202 @@ img {
     display: block;
     margin-top: 4px;
   }
+  .cta-scribble {
+    height: 20px;
+    bottom: -22px;
+  }
 }
 
+/* ── 479: Smaller phones ── */
+@media (max-width: 479.98px) {
+  /* Hero: stats wrap tighter */
+  .hero-stats {
+    gap: 16px;
+  }
+  .stat-divider {
+    display: none;
+  }
+  .stat-num {
+    font-size: 18px;
+  }
+
+  /* Why: full width single column */
+  .why-card {
+    max-width: 100%;
+  }
+
+  /* Offer */
+  .offer-discount {
+    font-size: 48px;
+    white-space: nowrap;
+  }
+
+  .btn-limited {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+
+  /* Tools wave smaller */
+  .tools-box {
+    padding-inline: 28px;
+  }
+  .tools-wave {
+    height: 44px;
+  }
+  .tool-card {
+    height: 26px;
+  }
+  .hero-btn {
+    width: 70%;
+  }
+  .stat-divider {
+    display: none !important;
+  }
+}
+
+/* ── 359: Very small phones ── */
+@media (max-width: 359.98px) {
+  .learn-item {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .offer-box {
+    padding: 22px 12px;
+  }
+  .offer-discount {
+    font-size: 42px;
+    white-space: nowrap;
+  }
+
+  .tools-box {
+    padding-inline: 20px;
+  }
+  .tools-wave {
+    height: 36px;
+  }
+  .tool-card {
+    height: 22px;
+  }
+  .cert-wrap {
+    padding-inline: 0;
+  }
+}
+
+/* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .logo-marquee,
+  .underline-text::after,
+  .offer-discount::after {
+    animation: none;
+  }
+  .learn-item,
+  .learn-item .bi,
+  .ai-icon,
   .testi-card,
   .testi-featured,
   .testi-pagination .swiper-pagination-bullet {
     transition: none;
+  }
+}
+
+/* =========================================================
+   Fixed Floating Buttons — Call & WhatsApp
+   ========================================================= */
+.float-btns {
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.float-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+  will-change: transform;
+}
+
+.float-btn:hover {
+  transform: translateY(-4px) scale(1.1);
+  color: #fff;
+}
+
+/* ── Call button — brand navy ── */
+.float-btn-call {
+  background: linear-gradient(135deg, #1a4f8a 0%, #14305c 100%);
+  box-shadow: 0 6px 20px rgba(20, 48, 92, 0.5);
+}
+.float-btn-call:hover {
+  box-shadow: 0 10px 28px rgba(20, 48, 92, 0.65);
+  filter: brightness(1.12);
+}
+
+/* ── WhatsApp button — WA green ── */
+.float-btn-wa {
+  background: linear-gradient(135deg, #25d366 0%, #128c4a 100%);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+.float-btn-wa:hover {
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.55);
+  filter: brightness(1.08);
+}
+
+/* ── Pulse ring on WhatsApp ── */
+.float-btn-wa::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(37, 211, 102, 0.6);
+  animation: wa-pulse 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes wa-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 575.98px) {
+  .float-btns {
+    bottom: 20px;
+    right: 16px;
+    gap: 10px;
+  }
+
+  .float-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
   }
 }

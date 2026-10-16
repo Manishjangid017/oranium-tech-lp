@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===== Primary Meta ===== -->
+    <title>Thank You | Oranium Tech</title>
+    <meta
+      name="description"
+      content="Thank you for enrolling with Oranium Tech. Your journey to mastering Generative AI starts now."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- ===== Theme ===== -->
+    <meta name="theme-color" content="#184276" />
+
+    <!-- Google Fonts: Poppins + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5.3 + Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <!-- Shared CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/animation.css" rel="stylesheet" />
+
+    <style>
+      /* =========================================================
+         Thank-You Page Styles
+         ========================================================= */
+
+      /* Full-page layout */
+      .ty-page {
+        min-height: calc(100vh - 90px); /* subtract header height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        isolation: isolate;
+        padding: 60px 16px;
+        background: var(--dark);
+        overflow: hidden;
+      }
+
+      /* Subtle radial glow behind card */
+      .ty-page::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background:
+          radial-gradient(ellipse 60% 55% at 50% 40%, rgba(221, 106, 47, 0.12) 0%, transparent 70%),
+          radial-gradient(ellipse 50% 50% at 80% 80%, rgba(20, 48, 92, 0.4) 0%, transparent 60%);
+      }
+
+      /* Grid texture overlay */
+      .ty-page::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background-image: url('images/gird-bg-image.webp');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.06;
+      }
+
+      /* ---- Card ---- */
+      .ty-card {
+        position: relative;
+        width: 100%;
+        max-width: 680px;
+        background: linear-gradient(145deg, #111827 0%, #0d1f3c 100%);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: clamp(36px, 6vw, 60px) clamp(24px, 6vw, 56px);
+        text-align: center;
+        box-shadow:
+          0 24px 64px rgba(0, 0, 0, 0.55),
+          0 0 0 1px rgba(221, 106, 47, 0.12);
+      }
+
+      /* Top accent line */
+      .ty-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--brand), transparent);
+        border-radius: 0 0 4px 4px;
+      }
+
+      /* ---- Check icon circle ---- */
+      .ty-icon-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(221, 106, 47, 0.18) 0%, rgba(221, 106, 47, 0.08) 100%);
+        border: 1.5px solid rgba(221, 106, 47, 0.35);
+        margin-bottom: 24px;
+        animation: ty-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      }
+
+      .ty-icon-wrap i {
+        font-size: 36px;
+        color: var(--brand);
+      }
+
+      @keyframes ty-pop {
+        from {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* ---- Badge ---- */
+      .ty-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--brand);
+        background: rgba(221, 106, 47, 0.1);
+        border: 1px solid rgba(221, 106, 47, 0.25);
+        border-radius: 50px;
+        padding: 5px 14px;
+        margin-bottom: 18px;
+      }
+
+      /* ---- Heading ---- */
+      .ty-heading {
+        font-size: clamp(28px, 5vw, 40px);
+        font-weight: 700;
+        line-height: 1.2;
+        color: #f2f2f2;
+        margin: 0 0 14px;
+      }
+
+      .ty-heading span {
+        background: linear-gradient(90deg, #dd6a2f 0%, #f5a155 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* ---- Sub text ---- */
+      .ty-sub {
+        font-size: clamp(14px, 2vw, 16px);
+        color: rgba(255, 255, 255, 0.65);
+        line-height: 1.6;
+        max-width: 480px;
+        margin: 0 auto 32px;
+      }
+
+      /* ---- Divider ---- */
+      .ty-divider {
+        width: 48px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--brand), transparent);
+        border-radius: 2px;
+        margin: 0 auto 28px;
+      }
+
+      /* ---- What's Next steps ---- */
+      .ty-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 36px;
+        text-align: left;
+      }
+
+      .ty-step {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 12px;
+        padding: 14px 18px;
+        transition:
+          background 0.25s,
+          border-color 0.25s;
+      }
+
+      .ty-step:hover {
+        background: rgba(221, 106, 47, 0.07);
+        border-color: rgba(221, 106, 47, 0.2);
+      }
+
+      .ty-step-num {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1;
+        margin-top: 1px;
+      }
+
+      .ty-step-body {
+        flex: 1;
+      }
+
+      .ty-step-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #f0f0f0;
+        margin: 0 0 3px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .ty-step-desc {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.55);
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      /* ---- CTA Button ---- */
+      .ty-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+        border: none;
+        border-radius: 50px;
+        padding: 14px 32px;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(221, 106, 47, 0.35);
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s,
+          filter 0.25s;
+        cursor: pointer;
+      }
+
+      .ty-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(221, 106, 47, 0.48);
+        filter: brightness(1.08);
+        color: #fff;
+      }
+
+      .ty-btn-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        font-size: 14px;
+        flex-shrink: 0;
+        transition: transform 0.25s;
+      }
+
+      .ty-btn:hover .ty-btn-icon {
+        transform: translateX(3px);
+      }
+
+      /* ---- Footer note ---- */
+      .ty-note {
+        margin-top: 20px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.35);
+      }
+
+      .ty-note a {
+        color: rgba(255, 255, 255, 0.55);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: color 0.2s;
+      }
+
+      .ty-note a:hover {
+        color: var(--brand);
+      }
+
+      /* ---- Floating dots decoration ---- */
+      .ty-dot {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.15;
+        pointer-events: none;
+        animation: ty-float 6s ease-in-out infinite;
+      }
+
+      .ty-dot-1 {
+        width: 180px;
+        height: 180px;
+        background: var(--brand);
+        top: -60px;
+        right: -60px;
+        animation-delay: 0s;
+      }
+
+      .ty-dot-2 {
+        width: 120px;
+        height: 120px;
+        background: #184276;
+        bottom: -40px;
+        left: -40px;
+        animation-delay: -3s;
+      }
+
+      @keyframes ty-float {
+        0%,
+        100% {
+          transform: translateY(0px) scale(1);
+        }
+        50% {
+          transform: translateY(-14px) scale(1.04);
+        }
+      }
+
+      /* =========================================================
+         Responsive
+         ========================================================= */
+      @media (max-width: 575.98px) {
+        .ty-page {
+          padding: 40px 12px;
+          align-items: flex-start;
+          padding-top: 48px;
+        }
+
+        .ty-card {
+          border-radius: 16px;
+          padding: 32px 20px;
+        }
+
+        .ty-icon-wrap {
+          width: 68px;
+          height: 68px;
+          margin-bottom: 18px;
+        }
+
+        .ty-icon-wrap i {
+          font-size: 30px;
+        }
+
+        .ty-badge {
+          font-size: 11px;
+          padding: 4px 12px;
+        }
+
+        .ty-steps {
+          gap: 10px;
+        }
+
+        .ty-step {
+          padding: 12px 14px;
+          gap: 12px;
+        }
+
+        .ty-step-num {
+          width: 28px;
+          height: 28px;
+          font-size: 12px;
+        }
+
+        .ty-btn {
+          width: 100%;
+          justify-content: center;
+          font-size: 14px;
+          padding: 13px 24px;
+        }
+
+        .ty-dot-1 {
+          width: 120px;
+          height: 120px;
+          top: -40px;
+          right: -40px;
+        }
+
+        .ty-dot-2 {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      @media (max-width: 359.98px) {
+        .ty-heading {
+          font-size: 24px;
+        }
+
+        .ty-card {
+          padding: 28px 16px;
+        }
+      }
+
+      /* ---- User detail pills ---- */
+      .ty-user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 28px;
+      }
+
+      .ty-detail-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        padding: 8px 16px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.82);
+        font-family: 'Inter', sans-serif;
+        animation: ty-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+      }
+
+      .ty-detail-pill:nth-child(2) {
+        animation-delay: 0.07s;
+      }
+      .ty-detail-pill:nth-child(3) {
+        animation-delay: 0.14s;
+      }
+
+      .ty-detail-pill i {
+        font-size: 13px;
+        color: var(--brand);
+        flex-shrink: 0;
+      }
+
+      .ty-detail-pill span {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 575.98px) {
+        .ty-user-details {
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .ty-detail-pill {
+          width: 100%;
+          justify-content: center;
+          font-size: 12px;
+        }
+
+        .ty-detail-pill span {
+          max-width: 180px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="inter-fonts">
+    <!-- ===== Header (same as index) ===== -->
+    <header class="site-header" style="position: sticky; top: 0; z-index: 1030">
+      <div class="custom-container">
+        <div
+          class="d-flex align-items-center justify-content: space-between gap-3"
+          style="justify-content: space-between"
+        >
+          <a href="index.html" class="d-inline-flex">
+            <img src="images/logo-img.webp" alt="Oranium Tech" class="logo-img" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Thank You Section ===== -->
+    <main>
+      <section class="ty-page">
+        <div class="ty-card">
+          <!-- Floating decorative dots -->
+          <div class="ty-dot ty-dot-1" aria-hidden="true"></div>
+          <div class="ty-dot ty-dot-2" aria-hidden="true"></div>
+
+          <!-- Check icon -->
+          <div class="ty-icon-wrap">
+            <i class="bi bi-check-lg" aria-hidden="true"></i>
+          </div>
+
+          <!-- Heading -->
+          <h1 class="ty-heading poppins-fonts">
+            Thank You<span id="ty-name-inline"></span><br />
+            <span>for Joining Oranium Tech!</span>
+          </h1>
+
+          <!-- Sub text -->
+          <p class="ty-sub">
+            We've received your details. Our team will reach out to you within
+            <strong style="color: #f0f0f0">24 hours</strong> to guide you through the next steps.
+          </p>
+
+          <!-- User detail pills -->
+          <div class="ty-user-details" id="tyUserDetails" style="display: none">
+            <div class="ty-detail-pill" id="ty-pill-name" style="display: none">
+              <i class="bi bi-person-fill"></i>
+              <span id="ty-detail-name"></span>
+            </div>
+            <div class="ty-detail-pill" id="ty-pill-phone" style="display: none">
+              <i class="bi bi-telephone-fill"></i>
+              <span id="ty-detail-phone"></span>
+            </div>
+            <div class="ty-detail-pill" id="ty-pill-email" style="display: none">
+              <i class="bi bi-envelope-fill"></i>
+              <span id="ty-detail-email"></span>
+            </div>
+          </div>
+
+          <div class="ty-divider" aria-hidden="true"></div>
+
+          <!-- CTA -->
+          <a href="index.html" class="ty-btn poppins-fonts">
+            Back to Home
+            <span class="ty-btn-icon" aria-hidden="true">
+              <i class="bi bi-house-fill"></i>
+            </span>
+          </a>
+
+          <!-- Footer note -->
+          <p class="ty-note inter-fonts">
+            Questions? Reach us at call <a href="tel:+918072363772">+91 918072363772</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ===== Read query params & populate user details ===== -->
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+
+        const name = params.get('name') || '';
+        const phone = params.get('phone') || '';
+        const email = params.get('email') || '';
+
+        // Inline name in heading — "Thank You, Rahul"
+        if (name) {
+          document.getElementById('ty-name-inline').textContent = ', ' + name.split(' ')[0];
+        }
+
+        // Show detail pills only if data exists
+        let anyDetail = false;
+
+        if (name) {
+          document.getElementById('ty-detail-name').textContent = name;
+          document.getElementById('ty-pill-name').style.display = 'inline-flex';
+          anyDetail = true;
+        }
+        if (phone) {
+          document.getElementById('ty-detail-phone').textContent = phone;
+          document.getElementById('ty-pill-phone').style.display = 'inline-flex';
+          anyDetail = true;
+        }
+        if (email) {
+          document.getElementById('ty-detail-email').textContent = email;
+          document.getElementById('ty-pill-email').style.display = 'inline-flex';
+          anyDetail = true;
+        }
+
+        if (anyDetail) {
+          document.getElementById('tyUserDetails').style.display = 'flex';
+        }
+
+        // Clean URL — remove query params from address bar without reload
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      })();
+    </script>
+  </body>
+</html>
